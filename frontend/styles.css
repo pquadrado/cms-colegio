@@ -1,0 +1,250 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.main-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.container input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.container button:hover {
+  background-color: #0056b3;
+}
+
+.container .error-message {
+  color: red;
+  font-size: 12px;
+  display: none;
+  margin-top: 10px;
+}
+
+.container-center-events {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 4rem;
+  margin-left: 260px;
+}
+
+.container-flex-events {
+  max-width: 600px;
+  gap: 2rem;
+  border: 5px solid rgb(131, 131, 131);
+  border-radius: 14px;
+  padding: 1rem 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.icon-2 {
+  width: 15px;
+  margin-right: 10px;
+}
+
+.header-events p {
+  color: #424242;
+}
+
+.description-events {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.align-local-hour {
+  display: flex;
+  align-items: center;
+}
+
+.details-event {
+  gap: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.button-delete {
+  background-color: rgb(255, 79, 79);
+  color: white;
+  padding: 0.8rem 1.2rem;
+  font-weight: 600;
+  font-size: 15px;
+  border: 0px solid;
+  border-radius: 15px;
+}
+
+.button-delete:hover {
+  transition: 1s;
+  background-color: rgb(255, 61, 61);
+}
+
+#eventos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #ffffff;
+  position: fixed;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-left: 60px;
+  gap: 2rem;
+  border-right: 6px solid black;
+}
+
+.sidebar a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+.sidebar a:hover {
+  text-decoration: underline 3px;
+}
+
+.container-addevent {
+  margin-left: 260px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.container-inputs-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.container-forms {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 300px;
+}
+
+.input-text-forms-add {
+  padding: 0.4rem 0.8rem;
+  border: 2px solid black;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.insert-images {
+  background-color: #003578;
+  letter-spacing: 2px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-weight: 700;
+  line-height: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.button-submit {
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 0;
+  -webkit-box-shadow: 7px 2px 35px -24px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 7px 2px 35px -24px rgba(0, 0, 0, 1);
+  box-shadow: 7px 2px 35px -24px rgba(0, 0, 0, 1);
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #003578;
+  color: white;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+
+.button-remove-image{
+  background-color: rgb(255, 79, 79);
+  color: white;
+  padding: 0.4rem 1rem;
+  font-weight: 600;
+  font-size: 15px;
+  border: 0px solid;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.files-insert{
+  margin-bottom: 2rem;
+}
+
+.container-info{
+  display: flex;
+  justify-content: flex-start;
+}
+

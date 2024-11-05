@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criação de Evento</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="sidebar" style="margin-top: -64px;">
+    <a href="./informacoes.html">Informações</a>
+    <a href="./events.html">Eventos</a>
+    <a href="./addevent.html">Adicionar Eventos</a>
+  </div>
+  <div class="container-addevent">
+    <div>
+      <h1>Criar Novo Evento</h1>
+    </div>
+    <form id="eventForm" class="container-forms" enctype="multipart/form-data">
+      <div class="container-inputs-form">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" class="input-text-forms-add" required>
+      </div>
+      <div class="container-inputs-form">
+        <label for="subtitulo">Subtítulo:</label>
+        <input type="text" id="subtitulo" name="subtitulo" class="input-text-forms-add" required>
+      </div>
+      <div class="container-inputs-form">
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao" class="input-text-forms-add" style="height: 80px;" required></textarea>
+      </div>
+      <div class="container-inputs-form">
+        <label for="data">Data (dd-mm-yyyy):</label>
+        <input type="text" id="data" name="data" class="input-text-forms-add" required pattern="\d{2}-\d{2}-\d{4}">
+      </div>
+      <div class="container-inputs-form">
+        <label for="hora_inicio">Hora de Início (hh:mm):</label>
+        <input type="text" id="hora_inicio" name="hora_inicio" class="input-text-forms-add" required pattern="\d{2}:\d{2}">
+      </div>
+      <div class="container-inputs-form">
+        <label for="hora_termino">Hora de Término (hh:mm):</label>
+        <input type="text" id="hora_termino" name="hora_termino" class="input-text-forms-add" required pattern="\d{2}:\d{2}">
+      </div>
+      <div class="container-inputs-form">
+        <label for="local">Local:</label>
+        <input type="text" id="local" name="local" class="input-text-forms-add" required>
+      </div>
+      <div class="container-inputs-form">
+        <label for="file-input" class="insert-images">Inserir Imagens</label>
+        <input id="file-input" type="file" name="file" onchange="newInput(this)" multiple required>
+      </div>
+      <ul id="dp-files" class="files-insert"></ul>
+
+      <button type="button" onclick="submitForm()" class="button-submit">Criar Evento</button>
+    </form>
+  </div>
+
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
